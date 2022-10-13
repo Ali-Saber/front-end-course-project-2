@@ -1,0 +1,152 @@
+/* products section */
+.products .section-header .line{
+    transition: all 1s;
+}
+.products .section-header .line:hover{
+    width: 150px;
+}
+.products{
+    padding: 2em;
+}
+.products-list{
+    display: flex;
+    justify-content: center;
+}
+.products-list li{
+    margin: 0.8em 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--maincolor);
+    transition: all 1s;
+}
+.products-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+    margin: 2em 0;
+}
+.products-list li:hover{
+    color: rgb(46, 1, 1);
+}
+.product-image{
+    position: relative;
+}
+.product-item .product-image img{
+    width: 100%;
+}
+.product-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scalex(0);
+    transition: all 1s;
+}
+.product-overlay ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.product-overlay ul li{
+    width: 2em;
+    height: 2em;
+    background: var(--maincolor);
+    display: inline-block;
+    text-align: center;
+    margin: 0 0.1em;
+}
+.product-overlay ul li i{
+    color: #fff;
+    line-height: 1.5em;
+}
+.product-item:hover .product-overlay{
+    transform: scaleX(1);
+}
+.product-item i.active{
+    color: rgb(250, 192, 0);
+}
+.product-item i.not-active{
+    color: #999;
+}
+.product-info i{
+    margin-top: 0.8em;
+}
+.product-info span{
+    display: block;
+    margin: 0.5em 0.1em;
+    font-size: 1.2em;
+    color: #999;
+}
+/* design section */
+.design{
+    margin: 3em 0;
+    display: flex;
+}
+.design-details{
+    flex: 1;
+    position: relative;
+    margin:0 1em;
+}
+.design-details .image-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.design-description{
+    flex:2;
+    background-color: #f7f3ef;
+    padding-left: 1.5em;
+    position: relative;
+}
+.design-description .top{
+    position: relative;
+    padding-left: 3em;
+}
+.design-description .top .design-title{
+    position: absolute;
+    left: 4em;
+    top:0.8em;
+    font-size: 1.5em;
+}
+.design-description .top .design-number{
+    position: absolute;
+    left: 0.1em;
+    top: 0.1em;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--maincolor);
+}
+.design-description .top .design-month{
+    position:absolute;
+    left:0.1em;
+    top:4em;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--maincolor);
+}
+.design-description .top +p{
+    line-height: 1.6;
+    color: #999;
+    font-size: 1em;
+    margin-top: 7em;
+}
+.design-description .bullets{
+    text-align: right;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}
+.design-description .bullets span{
+    display: inline-block;
+    width: 3em;
+    height: 0.3em;
+    background-color: black;
+    margin-left: 0.8em;
+    border-radius: 10%;
+    opacity: 0.6;
+    transition: all 1s;
+}
+.design-description .bullets span:hover{
+    opacity: 1;
+}

@@ -1,0 +1,210 @@
+/* category section */
+.category .section-header .line{
+    transition: all 1s;
+}
+.category .section-header .line:hover{
+    width: 150px;
+}
+.category-items{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap: 1.5em;
+}
+.category-item img{
+    width: 100%;
+    margin-bottom: 2em;
+}
+.cat-heading{
+    color: rgb(117, 117, 117);
+    font-weight: normal;
+}
+.category-item{
+    position: relative;
+}
+.category-item i{
+    width: 2em;
+    height: 2em;
+    color: white;
+    background:var(--maincolor);
+    text-align: center;
+    display: block;
+    line-height: 2em;
+    position: absolute;
+    bottom: 2em;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s;
+}
+.category-item:hover i{
+    visibility: visible;
+    opacity: 1;
+}
+.cat-title{
+    padding-top: 0.5em;
+}
+.category .container .category-bullets span{
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 1s;
+}
+.category .container .category-bullets{
+    text-align: center;
+}
+.category .container .category-bullets span:hover{
+    opacity: 1;
+}
+/* discount divition */
+.discount{
+    margin: 3em 0;
+    display: flex;
+}
+
+.discount-description{
+    flex:2;
+    background-color: #f7f3ef;
+    padding: 1.3em;
+    position: relative;
+}
+.discount-description .top{
+    position: relative;
+    padding-left: 3em;
+}
+.discount-description .top .icon{
+    position: absolute;
+    left: 0.1em;
+    top: 0.1em;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: var(--maincolor);
+}
+.discount-description .bullets{
+    text-align: right;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}
+.discount-description .bullets span{
+    display: inline-block;
+    width: 3em;
+    height: 0.3em;
+    background-color: black;
+    margin-left: 0.8em;
+    border-radius: 10%;
+    opacity: 0.6;
+    transition: all 1s;
+}
+.discount-description .bullets span:hover{
+    opacity: 1;
+}
+.discount-description .top +p{
+    line-height: 1.6;
+    color: #999;
+    font-size: 1.4em;
+}
+.discount-title {
+    padding: 0 1em;
+    color: black;
+    font-size: 2em;
+    opacity: 0.9;
+}
+.discount-job{
+    padding: 0 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 0.5;
+    color: black;
+}
+
+.discount-item .discount-value{
+    padding:0.8em;
+    font-size: 1em;
+    opacity: 0.8;
+    color: var(--maincolor);
+}
+.discount-item .discount-categ{
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--subcolor);
+}
+
+.discount-item{
+    flex: 1;
+    height: 20em;
+    position: relative;
+}
+.discount-item:nth-child(2){
+    background-image: url(../images/cms-banner-1.jpg);
+    background-size: cover;
+    margin: 0 1.12em;
+}
+.discount-item:nth-child(3){
+    background-image:url(../images/cms-banner-2.jpg);
+    background-size: cover;
+    margin: 0 1.12em;
+}
+/* sprites section */
+.sprites{
+    display: flex;
+    margin-bottom: 2em;
+}
+.sprite-item{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid var(--maincolor);
+}
+.sprite-item:last-child{
+    border: 0;
+}
+.sprite-info h3{
+    font-size: 1em;
+}
+.sprite-info span{
+    color: #999;
+    font-size: 1em;
+}
+.sprite-icon{
+    background-image: url(../images/service-icon.png);
+    height: 3em;
+    background-repeat: no-repeat;
+}
+.sprite-icon-1{
+    background-position: center 5px;
+    transition: all 1s;
+}
+.sprite-item:hover .sprite-icon-1{
+    background-position: center -85px;
+}
+.sprite-icon-2{
+    background-position: center -180px;
+    transition: all 1s;
+}
+.sprite-item:hover .sprite-icon-2{
+    background-position: center -270px;
+}
+.sprite-icon-3{
+    background-position: center -360px;
+    transition: all 1s;
+}
+.sprite-item:hover .sprite-icon-3{
+    background-position: center -460px;
+}
+.sprite-icon-4{
+    background-position: center -550px;
+    transition: all 1s;
+}
+.sprite-item:hover .sprite-icon-4{
+    background-position: center -640px;
+}
+.sprite-icon-5{
+    background-position: center -735px;
+    transition: all 1s;
+}
+.sprite-item:hover .sprite-icon-5{
+    background-position: center -830px;
+}
